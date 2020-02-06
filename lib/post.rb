@@ -8,8 +8,9 @@ class Post
     @@all
   end
   
-  def initialize(title)
+  def initialize(title, author = nil)
     @title = title
+    @author = author
     @@all << self
   end
   
